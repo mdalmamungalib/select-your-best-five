@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select-Best-Five</title>
+    <!-- tailwine link added -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyUI link added -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.43.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- CSS added -->
+    <link rel="stylesheet" href="/STYLE/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="main-section">
+        <div class="thre-ster">
+          <img src="/background-img/02.png" alt="" />
+        </div>
+        <div>
+          <h1 class="maine-text">Select Your Best Five</h1>
+          <p class="maine-p mt-5">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            <br />
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            <br />
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- card section -->
+    <section class="w-9/12 mx-auto pt-12 mb-14">
+      <!-- full-card-section -->
+      <div class="grid grid-cols-2 gap-4">
+        <!-- player-card-section -->
+        <div class="grid grid-cols-2 gap-4">
+          <!-- card-01 -->
+          <div>
+            <div class="card w-full bg-base-100 shadow-xl">
+              <figure>
+                <img
+                  src="/Card img/01.jpg"
+                  class="w-full card-images"
+                  alt="Shoes"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Lionel Messi</h2>
+                <p>36 Goals . 120 Assist</p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary" onclick="addToCart(this)">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-02 -->
+          <div>
+            <div class="card w-full bg-base-100 shadow-xl">
+              <figure>
+                <img
+                  src="/Card img/02.jpg"
+                  class="w-full card-images"
+                  alt="Shoes"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Neymar Jr</h2>
+                <p>36 Goals . 120 Assist</p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary" onclick="addToCart(this)">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-03 -->
+          <div>
+            <div class="card w-full bg-base-100 shadow-xl">
+              <figure>
+                <img
+                  src="/Card img/03.jpg"
+                  class="w-full card-images"
+                  alt="Shoes"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Kylian Mbappé</h2>
+                <p>36 Goals . 120 Assist</p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary" onclick="addToCart(this)">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-04 -->
+          <div>
+            <div class="card w-full bg-base-100 shadow-xl">
+              <figure>
+                <img
+                  src="/Card img/04.jpg"
+                  class="w-full card-images"
+                  alt="Shoes"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Vítor Machado</h2>
+                <p>36 Goals . 120 Assist</p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary" onclick="addToCart(this)">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-05 -->
+          <div>
+            <div class="card w-full bg-base-100 shadow-xl">
+              <figure>
+                <img
+                  src="/Card img/05.jpg"
+                  class="w-full card-images"
+                  alt="Shoes"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Sergio Ramos</h2>
+                <p>36 Goals . 120 Assist</p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary" onclick="addToCart(this)">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-06 -->
+          <div>
+            <div class="card w-full bg-base-100 shadow-xl">
+              <figure>
+                <img
+                  src="/Card img/06.jpg"
+                  class="w-full card-images"
+                  alt="Shoes"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Renato Sanches</h2>
+                <p>36 Goals . 120 Assist</p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary" onclick="addToCart(this)">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card-math-section -->
+        <div>
+          <div class="mx-auto math-card">
+            <h1 class="Selected-V mt-5">Selected - V</h1>
+            <!-- row 1 -->
+            <div class="overflow-x-auto  text-xl">
+              <table class=" w-full">
+                <tbody class="gap-y-2" id="player-name-cart">
+                                
+                </tbody>
+              </table>
+            </div>
+  
+          </div>
+
+          <!-- main-math-js -->
+        <div class="mx-auto main-math-js">
+          <h1 class="Selected-V mt-5 pb-5">Budget</h1>
+          <div class="text-center">
+            <label for="">
+              <span>Per Player :</span>
+              <input class="w-1/3 h-7" type="text" name="" id="player-input">
+            </label>
+          </div>
+          <button id="calculate-id" class="btn btn-primary btn-sm w-48 mt-5 button-item">Calculate</button>
+
+          <div class="text-center pt-5">
+            <h2 class="text-xl">Player Expenses $<span class="number-color" id="player-expenses">00</span></h2>
+          </div>
+
+          <div class="text-center pt-5">
+            <label for="">
+              <span>Manager :</span>
+              <input class="w-1/3 h-7" type="text" name="" id="manager-input">
+            </label>
+          </div>
+
+          <div class="text-center pt-5">
+            
+            <label for="">
+              <span>Coach :</span>
+              <input class="w-1/3 h-7" type="text" name="" id="coach-input">
+            </label>
+          </div>
+          <button class="btn btn-primary btn-sm w-48 mt-5 button-item" id="calculate-total">Calculate Total</button>
+
+          <div class="text-center text-xl pt-5">
+            <h2>Total $<span class="number-color" id="total-id">00</span></h2>
+          </div>
+        </div>
+
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- footer-section-added -->
+    <footer class="footer  p-4 bg-neutral ">
+      <div class="mx-auto">
+        
+        <p>Copyright © 2022 - MD Al Mamun Galib</p>
+      </div> 
+     
+    </footer>
+
+    <!-- js-section-added -->
+    <script src="/JS/app.js"></script>
+    <script src="/JS/budget.js"></script>
+  </body>
+</html>

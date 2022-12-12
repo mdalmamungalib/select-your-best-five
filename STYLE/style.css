@@ -1,0 +1,71 @@
+.main-section{
+    min-height: 640px;
+    
+    background-color: black;
+    background-image: url(/background-img/01.png);
+    background-repeat: no-repeat;
+    background-size: 480px 400px;
+    background-position: 90px 180px;
+    
+    
+    display: flex;
+}
+
+.thre-ster{
+    margin-top: 280px;
+}
+
+.maine-text{
+    margin-top: 120px;
+    margin-right: 50px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 80px;
+    font-weight: bold;
+    color: #FF5E19;
+}
+
+.maine-p{
+    text-align: center;
+    padding-right: 20px;
+}
+
+/* card-section */
+
+.card-images{
+    height: 205px;
+}
+
+
+
+.math-card{
+    border: 1px solid rgb(139, 139, 53);
+    border: none;
+    height: 231px;
+    width: 264px;
+    background-color: black;
+    
+}
+
+.Selected-V{
+    text-align: center;
+    font-size: 35px;
+    color: #FF5E19;
+}
+
+.main-math-js{
+    border: 1px solid rgb(139, 139, 53);
+    border: none;
+    height: 410px;
+    width: 264px;
+    margin-top: 20px;
+    background-color: black;
+}
+
+.button-item{
+    margin-left: 40px;
+    
+}
+
+.number-color{
+    color: #FF5E19;
+}
